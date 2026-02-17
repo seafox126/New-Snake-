@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open World Snake</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud">
+        <h1>Open World Snake</h1>
+        <div class="stats">
+          <span id="score">Score: 0</span>
+          <span id="coords">Head: (0, 0)</span>
+          <span id="speed">Speed: 8 tps</span>
+          <span id="biome">Biome: Plains</span>
+          <span id="enemies">Enemies: 0</span>
+        </div>
+        <p>
+          Move with arrow keys / WASD. The world is infinite with large random
+          biomes, roaming enemies, and biome relics worth bonus points.
+          Press Space to pause.
+        </p>
+      </header>
+      <canvas id="world" width="1000" height="640" aria-label="snake game canvas"></canvas>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
